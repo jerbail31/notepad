@@ -4,9 +4,11 @@ var notenumber3 = 1;
 var noteinput1 = "";
 var noteinput2 = "";
 var noteinput3 = "";
+//new note button
 $("#createnote").click(function() {
 	$("#newnote").css('display', 'block');
 });
+//Save button
 $("#save").click(function() {
 	if (notenumber1==1) {
 	noteinput1 = $("#noteenter").val();
@@ -41,6 +43,8 @@ $("#save").click(function() {
 	}
 
 });
+
+//view button
 function view1() {
 	alert(noteinput1);
 }
@@ -51,6 +55,9 @@ function view2() {
 function view3() {
 	alert(noteinput3);
 }
+
+//Delete button
+//Delete the notes button will create a pop-up(ok and cancel)
 function deletenote1() {
 	if(confirm("are you sure you want to delete the note?")){
 		$("#note1").css('display', 'none');
@@ -78,3 +85,5 @@ function deletenote3() {
 		//do nothing
 	}
 }
+
+//edit button
