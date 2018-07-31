@@ -4,6 +4,9 @@ var notenumber3 = 1;
 var noteinput1 = "";
 var noteinput2 = "";
 var noteinput3 = "";
+var titleinput1 = "";
+var titleinput2 = "";
+var titleinput3 = "";
 //new note button
 $("#createnote").click(function() {
 	$("#newnote").css('display', 'block');
@@ -62,6 +65,9 @@ function deletenote1() {
 	if(confirm("are you sure you want to delete the note?")){
 		$("#note1").css('display', 'none');
 		notenumber1 = 1;
+		document.getElementById("title1").innerHTML = "";
+		document.getElementById("noteinput1").innerHTML = "";
+		
 	}
 	else{
 		//do nothing
@@ -71,6 +77,9 @@ function deletenote2() {
 	if(confirm("are you sure you want to delete the note?")){
 		$("#note2").css('display', 'none');
 		notenumber2 = 1;
+		document.getElementById("title2").innerHTML = "";
+		document.getElementById("noteinput2").innerHTML = "";
+		
 	}
 	else{
 		//do nothing
@@ -80,6 +89,9 @@ function deletenote3() {
 	if(confirm("are you sure you want to delete the note?")){
 		$("#note3").css('display', 'none');
 		notenumber3 = 1;
+		document.getElementById("title3").innerHTML = "";
+		document.getElementById("noteinput3").innerHTML = "";
+		
 	}
 	else{
 		//do nothing
@@ -87,3 +99,30 @@ function deletenote3() {
 }
 
 //edit button
+function edit1() {
+	$("#note1").css('display', 'none');
+	notenumber1 = 1
+	$("#titleenter").append(titleinput1);
+	$("#noteenter").append(noteinput1);
+	$("#newnote").css('display', 'block');
+	document.getElementById("title1").innerHTML = "";
+	document.getElementById("noteinput1").innerHTML = "";
+}
+function edit2() {
+	$("#note2").css('display', 'none');
+	notenumber2 = 1
+	$("#titleenter").append(titleinput2);
+	$("#noteenter").append(noteinput2);
+	$("#newnote").css('display', 'block');
+	document.getElementById("title2").innerHTML = "";
+	document.getElementById("noteinput2").innerHTML = "";
+}
+function edit3() {
+	$("#note3").css('display', 'none');
+	notenumber3 = 1
+	$("#titleenter").append(titleinput3);
+	$("#noteenter").append(noteinput3);
+	$("#newnote").css('display', 'block');
+	document.getElementById("title3").innerHTML = "";
+	document.getElementById("noteinput3").innerHTML = "";
+}
