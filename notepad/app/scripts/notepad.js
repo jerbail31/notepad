@@ -1,4 +1,4 @@
-$("#createNote").click(function() {
-	$("#newNote").css('display', 'block');
+$("#createnote").click(function() {
+	$("#newnote").css('display', 'block');
 });
-	``
+
