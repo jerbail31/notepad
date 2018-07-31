@@ -1,9 +1,9 @@
-var note# = 1
+var notenumber = 1
 $("#createnote").click(function() {
 	$("#newnote").css('display', 'block');
 });
 $("#save").click(function() {
-	if (note#==1) {
+	if (notenumber==1) {
 	var noteinput1 = $("#noteenter").val();
 	var titleinput1 = $("#titleenter").val();
 	$("#title1").append(titleinput1);
@@ -11,7 +11,7 @@ $("#save").click(function() {
 	$("#newnote").css('display', 'none');
 	}
 	else{
-		if(note#==2){
+		if(notenunber==2){
 		var noteinput1 = $("#noteenter").val();
 		var titleinput1 = $("#titleenter").val();
 		$("#title1").append(titleinput1);
@@ -19,7 +19,7 @@ $("#save").click(function() {
 		$("#newnote").css('display', 'none');
 		}
 		else{
-			if(note#==3) {
+			if(notenumber==3) {
 			var noteinput1 = $("#noteenter").val();
 			var titleinput1 = $("#titleenter").val();
 			$("#title1").append(titleinput1);
