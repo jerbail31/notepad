@@ -9,7 +9,10 @@ var titleinput2 = "";
 var titleinput3 = "";
 //new note button
 $("#createnote").click(function() {
+	$("#titleenter").val("")
+	$("#noteenter").val("")
 	$("#newnote").css('display', 'block');
+
 });
 //Save button
 $("#save").click(function() {
