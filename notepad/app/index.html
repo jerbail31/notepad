@@ -1,7 +1,11 @@
 <!doctype html>
+ <html>
   <head>
+		<!-- css link-->
 		<link rel="stylesheet" type="text/css" href="styles/notepad.css">
+		<!--change the tab image to a notepad-->
 		<link rel="icon" href="https://lh3.ggpht.com/bheuhKKEmExpdeuE0muihqWCzzSXLfHWbBbYl7MfYYzaol3BKLs3MAu61g2ig3cHNh4=s180"/>
+  	<!--tab title-->
   	<title>Notepad</title>
   </head>
   <body>
@@ -14,21 +18,42 @@
     margin-left: 0;
     margin-right: 0;
     font-weight: bold">
-    	Notepad
+    <!--Word after the image-->
+    Notepad
+			<!--image link-->
 			<img src="https://lh3.ggpht.com/bheuhKKEmExpdeuE0muihqWCzzSXLfHWbBbYl7MfYYzaol3BKLs3MAu61g2ig3cHNh4=s180"width="42" height="42" align="left">
 		</p>
-  	<hr/>
-  	<h1>
-  		<u>
-  			Notes
-  		</u>
-  	</h1>
-  	<!--note-->
+  		<hr/>
+  		<h1>
+  			<u>Notes</u>
+  		</h1>
+  	<!--where the entered note will be found-->
   	<p id="note"></p>
   	<!--new note button-->
-  	<button id=newnote>New note</button>
-
+  	<button id="createNote">New note</button>
+  	<!--where the place you can enter your note will be-->
+  	<div id="newNote" style="display:none">
+  		<form>
+			Title:
+			<br/>
+			<input 
+			style="" type="text" 
+			name="titleenter"/> 
+			<br/>
+			<br/>
+			Note:
+			<br/>
+			<textarea 
+			cols="40" 
+       		rows="5"
+       		type="text" 
+   			name="noteenter"></textarea>
+       		<br/> <br/>
+			<button id="save">Save</button>
+		</form>	
+  	</div>
   	<p id="noteinsert"></p>
-  
+  	<script type="text/javascript" src="scripts/jquery.min.js"></script>
+  	<script type="text/javascript" src="scripts/notepad.js"></script>
   </body>
 </html>
