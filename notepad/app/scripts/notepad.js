@@ -40,12 +40,17 @@ function view1() {
 	alert(noteinput1);
 }
 function view2() {
+	
 	alert(noteinput2);
 }
 function view3() {
 	alert(noteinput3);
 }
-function deletenote() {
-	confirm("are you sure you want to delete the note?")
-
+function deletenote1() {
+	if(confirm("are you sure you want to delete the note?")){
+		$("#note1").css('display', 'none');
+	}
+	else{
+		//do nothing
+	}
 }
