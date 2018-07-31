@@ -9,7 +9,7 @@ $("#createnote").click(function() {
 });
 $("#save").click(function() {
 	if (notenumber1==1) {
-	var noteinput1 = $("#noteenter").val();
+	noteinput1 = $("#noteenter").val();
 	var titleinput1 = $("#titleenter").val();
 	$("#title1").append(titleinput1);
 	$("#note1").css('display', 'block');
@@ -18,7 +18,7 @@ $("#save").click(function() {
 	}
 	else{
 		if(notenumber2==1){
-		var noteinput2 = $("#noteenter").val();
+		noteinput2 = $("#noteenter").val();
 		var titleinput2 = $("#titleenter").val();
 		$("#title2").append(titleinput1);
 		$("#note2").css('display', 'block');
@@ -27,7 +27,7 @@ $("#save").click(function() {
 		}
 		else{
 			if(notenumber3==1) {
-			var noteinput3 = $("#noteenter").val();
+			noteinput3 = $("#noteenter").val();
 			var titleinput3 = $("#titleenter").val();
 			$("#title3").append(titleinput1);
 			$("#note3").css('display', 'block');
