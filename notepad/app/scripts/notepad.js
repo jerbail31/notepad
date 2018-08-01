@@ -16,6 +16,7 @@ $("#createnote").click(function() {
 });
 //Save button
 $("#save").click(function() {
+	debugger;
 	if (notenumber1==1) {
 	noteinput1 = $("#noteenter").val();
 	titleinput1 = $("#titleenter").val();
@@ -68,8 +69,7 @@ function deletenote1() {
 	if(confirm("are you sure you want to delete the note?")){
 		$("#note1").css('display', 'none');
 		notenumber1 = 1;
-		document.getElementById("title1").innerHTML = "";
-		document.getElementById("note1").innerHTML = "";
+		
 		
 	}
 	else{
@@ -103,28 +103,22 @@ function deletenote3() {
 
 //edit button
 function edit1() {
-	notenumber1 = 1
+	
+	notenumber1 = 1;
 	$("#titleenter").val(titleinput1);
 	$("#noteenter").val(noteinput1);
 	$("#newnote").css('display', 'block');
-	document.getElementById("title1").innerHTML = "";
-	document.getElementById("note1").innerHTML = "";
+
 }
 function edit2() {
-	$("#note2").css('display', 'none');
-	notenumber2 = 1
+	notenumber2 = 1;
 	$("#titleenter").val(titleinput2);
 	$("#noteenter").val(noteinput2);
 	$("#newnote").css('display', 'block');
-	document.getElementById("title2").innerHTML = "";
-	document.getElementById("note2").innerHTML = "";
 }
 function edit3() {
-	$("#note3").css('display', 'none');
-	notenumber3 = 1
+	notenumber3 = 1;
 	$("#titleenter").val(titleinput3);
 	$("#noteenter").val(noteinput3);
 	$("#newnote").css('display', 'block');
-	document.getElementById("title3").innerHTML = "";
-	document.getElementById("note3").innerHTML = "";
 }
