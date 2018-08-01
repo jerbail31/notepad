@@ -8,6 +8,7 @@ var noteinput3 = "";
 var titleinput1 = "";
 var titleinput2 = "";
 var titleinput3 = "";
+
 //new note button
 $("#createnote").click(function() {
 	$("#titleenter").val("")
