@@ -23,6 +23,8 @@ $("#save").click(function() {
 	$("#title1").append(titleinput1);
 	$("#note1").css('display', 'block');
 	$("#newnote").css('display', 'none');
+	var d = new Date();
+	$("#date1").append(d)
 	notenumber1++
 	}
 	else{
@@ -33,6 +35,8 @@ $("#save").click(function() {
 		$("#title2").append(titleinput2);
 		$("#note2").css('display', 'block');
 		$("#newnote").css('display', 'none');
+		var d = new Date();
+		$("#date2").append(d)
 		notenumber2++
 		}
 		else{
@@ -43,6 +47,8 @@ $("#save").click(function() {
 			$("#title3").append(titleinput3);
 			$("#note3").css('display', 'block');
 			$("#newnote").css('display', 'none');
+			var d = new Date();
+			$("#date3").append(d)
 			notenumber3++
 			}
 			else {
