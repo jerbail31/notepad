@@ -16,6 +16,7 @@ $("#createnote").click(function() {
 });
 //Save button
 $("#save").click(function() {
+	debugger;
 	if (notenumber1==1) {
 	$("#title1").empty()
 	noteinput1 = $("#noteenter").val();
@@ -23,6 +24,7 @@ $("#save").click(function() {
 	$("#title1").append(titleinput1);
 	$("#note1").css('display', 'block');
 	$("#newnote").css('display', 'none');
+	$("#date1").empty();
 	var d = new Date();
 	$("#date1").append(d)
 	notenumber1++
@@ -35,18 +37,20 @@ $("#save").click(function() {
 		$("#title2").append(titleinput2);
 		$("#note2").css('display', 'block');
 		$("#newnote").css('display', 'none');
+		$("#date2").empty();
 		var d = new Date();
 		$("#date2").append(d)
 		notenumber2++
 		}
 		else{
 			if(notenumber3==1) {
-			$("#title3").empty()
+			("#title3").empty()
 			noteinput3 = $("#noteenter").val();
 			titleinput3 = $("#titleenter").val();
 			$("#title3").append(titleinput3);
 			$("#note3").css('display', 'block');
 			$("#newnote").css('display', 'none');
+			$("#date3").empty();
 			var d = new Date();
 			$("#date3").append(d)
 			notenumber3++
