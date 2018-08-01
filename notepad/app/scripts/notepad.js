@@ -80,8 +80,6 @@ function deletenote2() {
 	if(confirm("are you sure you want to delete the note?")){
 		$("#note2").css('display', 'none');
 		notenumber2 = 1;
-		document.getElementById("title2").innerHTML = "";
-		document.getElementById("note2").innerHTML = "";	
 	}
 //if cancel pressed do noting
 }
@@ -89,9 +87,7 @@ function deletenote3() {
 	if(confirm("are you sure you want to delete the note?")){
 		$("#note3").css('display', 'none');
 		notenumber3 = 1;
-		document.getElementById("title3").innerHTML = "";
-		document.getElementById("note3").innerHTML = "";	
-	}
+}
 //if cancel pressed do nothing
 }
 
