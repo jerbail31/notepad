@@ -103,10 +103,11 @@ function deletenote3() {
 
 //edit button
 function edit1() {
+	debugger;
 	$("#note1").css('display', 'none');
 	notenumber1 = 1
-	$("#titleenter").append(titleinput1);
-	$("#noteenter").append(noteinput1);
+	$("#titleenter").val(titleinput1);
+	$("#noteenter").val(noteinput1);
 	$("#newnote").css('display', 'block');
 	document.getElementById("title1").innerHTML = "";
 	document.getElementById("noteinput1").innerHTML = "";
@@ -114,17 +115,17 @@ function edit1() {
 function edit2() {
 	$("#note2").css('display', 'none');
 	notenumber2 = 1
-	$("#titleenter").append(titleinput2);
-	$("#noteenter").append(noteinput2);
+	$("#titleenter").val(titleinput2)
+	$("#noteenter").val(noteinput2)
 	$("#newnote").css('display', 'block');
 	document.getElementById("title2").innerHTML = "";
-	document.getElementById("noteinput2").innerHTML = "";
+	document.getElementById("note2").innerHTML = "";
 }
 function edit3() {
 	$("#note3").css('display', 'none');
 	notenumber3 = 1
-	$("#titleenter").append(titleinput3);
-	$("#noteenter").append(noteinput3);
+	$("#titleenter").val(titleinput3)
+	$("#noteenter").val(noteinput3)
 	$("#newnote").css('display', 'block');
 	document.getElementById("title3").innerHTML = "";
 	document.getElementById("noteinput3").innerHTML = "";
