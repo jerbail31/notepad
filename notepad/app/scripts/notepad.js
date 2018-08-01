@@ -16,8 +16,8 @@ $("#createnote").click(function() {
 });
 //Save button
 $("#save").click(function() {
-	debugger;
 	if (notenumber1==1) {
+	$("#title1").empty()
 	noteinput1 = $("#noteenter").val();
 	titleinput1 = $("#titleenter").val();
 	$("#title1").append(titleinput1);
@@ -27,6 +27,7 @@ $("#save").click(function() {
 	}
 	else{
 		if(notenumber2==1){
+		$("#title2").empty()
 		noteinput2 = $("#noteenter").val();
 		titleinput2 = $("#titleenter").val();
 		$("#title2").append(titleinput2);
@@ -36,6 +37,7 @@ $("#save").click(function() {
 		}
 		else{
 			if(notenumber3==1) {
+			$("#title3").empty()
 			noteinput3 = $("#noteenter").val();
 			titleinput3 = $("#titleenter").val();
 			$("#title3").append(titleinput3);
@@ -69,36 +71,28 @@ function deletenote1() {
 	if(confirm("are you sure you want to delete the note?")){
 		$("#note1").css('display', 'none');
 		notenumber1 = 1;
-		
-		
+
+
 	}
-	else{
-		//do nothing
-	}
+//if cancel pressed do nothing
 }
 function deletenote2() {
 	if(confirm("are you sure you want to delete the note?")){
 		$("#note2").css('display', 'none');
 		notenumber2 = 1;
 		document.getElementById("title2").innerHTML = "";
-		document.getElementById("note2").innerHTML = "";
-		
+		document.getElementById("note2").innerHTML = "";	
 	}
-	else{
-		//do nothing
-	}
+//if cancel pressed do noting
 }
 function deletenote3() {
 	if(confirm("are you sure you want to delete the note?")){
 		$("#note3").css('display', 'none');
 		notenumber3 = 1;
 		document.getElementById("title3").innerHTML = "";
-		document.getElementById("note3").innerHTML = "";
-		
+		document.getElementById("note3").innerHTML = "";	
 	}
-	else{
-		//do nothing
-	}
+//if cancel pressed do nothing
 }
 
 //edit button
