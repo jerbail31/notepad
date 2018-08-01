@@ -1,4 +1,5 @@
 function createnewnote() {
+	debugger;
 	var div =document.createElement("div");
 	var button1 =document.createElement("button");
 	var button2 =document.createElement("button");
@@ -23,7 +24,9 @@ function createnewnote() {
 	button4.innerText = "Delete";
 	button4.id = "view";
 	button4.style.padding = "12px";
-	div.appendChild(button4)
+	div.appendChild(button4);
+	date.id = "date";
+	div.appendChild(date);
 	return div;
 
 
@@ -32,6 +35,6 @@ function createnewnote() {
 
 function addNote() {
 	var grab = this.parentNode;
-	var grab.;
+	var grab;
 	var listNote = createnewnote();
 }
