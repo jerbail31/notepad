@@ -1,25 +1,25 @@
 <!doctype html>
- <html>
-  <head>
+<html>
+    <head>
 		<!-- css link-->
 		<link rel="stylesheet" type="text/css" href="styles/notepad.css">
 		<!--change the tab image to a notepad-->
 		<link rel="icon" href="https://lh3.ggpht.com/bheuhKKEmExpdeuE0muihqWCzzSXLfHWbBbYl7MfYYzaol3BKLs3MAu61g2ig3cHNh4=s180"/>
   	<!--tab title-->
-  	<title>Notepad</title>
-  </head>
-  <body>
-  	<!--logo and name-->
-  	<!--since I can't align image and H1 I changed the p tag to h1 using css-->
+        <title>Notepad</title>
+    </head>
+    <body>
+        <!--logo and name-->
+        <!--since I can't align image and H1 I changed the p tag to h1 using css-->
 		<p style="display: block;
-    font-size: 2em;
-    margin-top: 0.67em;
-    margin-bottom: 0.67em;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold">
-    <!--Word after the image-->
-    Notepad
+        font-size: 2em;
+        margin-top: 0.67em;
+        margin-bottom: 0.67em;
+        margin-left: 0;
+        margin-right: 0;
+        font-weight: bold">
+        <!--Word after the image-->
+        Notepad
 			<!--image link-->
 			<img src="https://lh3.ggpht.com/bheuhKKEmExpdeuE0muihqWCzzSXLfHWbBbYl7MfYYzaol3BKLs3MAu61g2ig3cHNh4=s180"width="42" height="42" align="left">
 		</p>
@@ -27,55 +27,57 @@
   		<h1>
   			<u>Notes</u>
   		</h1>
-  	<!--where the entered note will be found-->
-  	<div class="btn-group" id="note1" style="display:none">
-  			<button id="title1" style="padding: 12px 100px;"></button>
-  			<button onclick="view1()" style="padding:12px;">view</button>
-  			<button onclick="edit1()" style="padding:12px;">edit</button>
-  			<button onclick="deletenote1()" style="padding:12px;">delete</button>
-		</div>
-		<!--note2-->
-		<div class="btn-group" id="note2" style="display:none">
-  			<button id="title2" style="padding: 12px 100px;"></button>
-  			<button onclick="view2()" style="padding:12px;">view</button>
-  			<button onclick="edit2()" style="padding:12px;">edit</button>
-  			<button onclick="deletenote2()" style="padding:12px;">delete</button>
-		</div>
-		<!--note3-->
-		<div class="btn-group" id="note3" style="display:none">
-  			<button id="title3" style="padding: 12px 100px;"></button>
-  			<button onclick="view3()" style="padding:12px;">view</button>
-  			<button onclick="edit3()" style="padding:12px;">edit</button>
-  			<button onclick="deletenote3()" style="padding:12px;">delete</button>
-		</div>
+      	<!--where the entered note will be found-->
+      	<div class="btn-group" id="note1" style="display:none">
+      		<button id="title1" style="padding: 12px 100px;"></button>
+      		<button onclick="view1()" style="padding:12px;">View</button>
+      		<button onclick="edit1()" style="padding:12px;">Edit</button>
+      		<button onclick="deletenote1()" style="padding:12px;">Delete</button>
+    	</div>
+    		<!--note2-->
+    	<div class="btn-group" id="note2" style="display:none">
+      		<button id="title2" style="padding: 12px 100px;"></button>
+      		<button onclick="view2()" style="padding:12px;">View</button>
+      		<button onclick="edit2()" style="padding:12px;">Edit</button>
+      		<button onclick="deletenote2()" style="padding:12px;">Delete</button>
+    	</div>
+    		<!--note3-->
+    	<div class="btn-group" id="note3" style="display:none">
+      		<button id="title3" style="padding: 12px 100px;"></button>
+      		<button onclick="view3()" style="padding:12px;">View</button>
+      		<button onclick="edit3()" style="padding:12px;">Edit</button>
+    		<button onclick="deletenote3()" style="padding:12px;">Delete</button>
+    	</div>
 
-  	<!--new note button-->
-  	<button id="createnote">New note</button>
-  	<!--where the place you can enter your note will be-->
-  	<div id="newnote" style="display:none">
-				<br/>
-				Title:
-				<br/>
-        <textarea 
-        cols="20" 
-        rows="1"
-        type="text" 
-        id="titleenter">
-        </textarea>
-				<br/>
-				<br/>
-				Note:
-				<br/>
-				<textarea 
-				cols="40" 
-	      rows="5"
-	      type="text" 
-	   		id="noteenter">  
-        </textarea>
-	      <br/>
-	      <br/>
-				<button id="save">Save</button>
-  	</div>
+      	<div class="btn-group" id="newsort">
+            <button id="createnote">New Note</button>   
+            <button id="sort">Sort By Date</button>
+        </div>
+        <!--where the place you can enter your note will be-->
+      	<div id="newnote" style="display:none">
+			<br/>
+			Title:
+			<br/>
+            <textarea 
+            cols="20" 
+            rows="1"
+            type="text" 
+            id="titleenter">
+            </textarea>
+			<br/>
+			<br/>
+			Note:
+			<br/>
+			<textarea 
+			cols="40" 
+            rows="5"
+            type="text" 
+            id="noteenter">  
+            </textarea>
+            <br/>
+            <br/>
+			<button id="save">Save</button>
+        </div>
   	
 
   	<script type="text/javascript" src="scripts/jquery.min.js"></script>
