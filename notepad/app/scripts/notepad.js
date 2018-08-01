@@ -18,7 +18,7 @@ $("#createnote").click(function() {
 $("#save").click(function() {
 	if (notenumber1==1) {
 	noteinput1 = $("#noteenter").val();
-	var titleinput1 = $("#titleenter").val();
+	titleinput1 = $("#titleenter").val();
 	$("#title1").append(titleinput1);
 	$("#note1").css('display', 'block');
 	$("#newnote").css('display', 'none');
@@ -27,7 +27,7 @@ $("#save").click(function() {
 	else{
 		if(notenumber2==1){
 		noteinput2 = $("#noteenter").val();
-		var titleinput2 = $("#titleenter").val();
+		titleinput2 = $("#titleenter").val();
 		$("#title2").append(titleinput2);
 		$("#note2").css('display', 'block');
 		$("#newnote").css('display', 'none');
@@ -36,7 +36,7 @@ $("#save").click(function() {
 		else{
 			if(notenumber3==1) {
 			noteinput3 = $("#noteenter").val();
-			var titleinput3 = $("#titleenter").val();
+			titleinput3 = $("#titleenter").val();
 			$("#title3").append(titleinput3);
 			$("#note3").css('display', 'block');
 			$("#newnote").css('display', 'none');
@@ -69,7 +69,7 @@ function deletenote1() {
 		$("#note1").css('display', 'none');
 		notenumber1 = 1;
 		document.getElementById("title1").innerHTML = "";
-		document.getElementById("noteinput1").innerHTML = "";
+		document.getElementById("note1").innerHTML = "";
 		
 	}
 	else{
@@ -81,7 +81,7 @@ function deletenote2() {
 		$("#note2").css('display', 'none');
 		notenumber2 = 1;
 		document.getElementById("title2").innerHTML = "";
-		document.getElementById("noteinput2").innerHTML = "";
+		document.getElementById("note2").innerHTML = "";
 		
 	}
 	else{
@@ -93,7 +93,7 @@ function deletenote3() {
 		$("#note3").css('display', 'none');
 		notenumber3 = 1;
 		document.getElementById("title3").innerHTML = "";
-		document.getElementById("noteinput3").innerHTML = "";
+		document.getElementById("note3").innerHTML = "";
 		
 	}
 	else{
@@ -103,20 +103,18 @@ function deletenote3() {
 
 //edit button
 function edit1() {
-	debugger;
-	$("#note1").css('display', 'none');
 	notenumber1 = 1
 	$("#titleenter").val(titleinput1);
 	$("#noteenter").val(noteinput1);
 	$("#newnote").css('display', 'block');
 	document.getElementById("title1").innerHTML = "";
-	document.getElementById("noteinput1").innerHTML = "";
+	document.getElementById("note1").innerHTML = "";
 }
 function edit2() {
 	$("#note2").css('display', 'none');
 	notenumber2 = 1
-	$("#titleenter").val(titleinput2)
-	$("#noteenter").val(noteinput2)
+	$("#titleenter").val(titleinput2);
+	$("#noteenter").val(noteinput2);
 	$("#newnote").css('display', 'block');
 	document.getElementById("title2").innerHTML = "";
 	document.getElementById("note2").innerHTML = "";
@@ -124,9 +122,9 @@ function edit2() {
 function edit3() {
 	$("#note3").css('display', 'none');
 	notenumber3 = 1
-	$("#titleenter").val(titleinput3)
-	$("#noteenter").val(noteinput3)
+	$("#titleenter").val(titleinput3);
+	$("#noteenter").val(noteinput3);
 	$("#newnote").css('display', 'block');
 	document.getElementById("title3").innerHTML = "";
-	document.getElementById("noteinput3").innerHTML = "";
+	document.getElementById("note3").innerHTML = "";
 }
