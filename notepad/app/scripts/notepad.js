@@ -1,3 +1,4 @@
+var sortdate = 0;
 var notenumber1 = 1;
 var notenumber2 = 1;
 var notenumber3 = 1;
@@ -25,6 +26,7 @@ $("#save").click(function() {
 	$("#note1").css('display', 'block');
 	$("#newnote").css('display', 'none');
 	$("#date1").empty();
+	
 	var d = new Date();
 	$("#date1").append(d)
 	notenumber1++
@@ -121,4 +123,7 @@ function edit3() {
 	$("#titleenter").val(titleinput3);
 	$("#noteenter").val(noteinput3);
 	$("#newnote").css('display', 'block');
+}
+function sort() {
+
 }
