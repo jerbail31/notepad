@@ -51,7 +51,7 @@ $("#save").click(function() {
 	
 	var d = new Date();
 	$("#date1").append(d)
-	notenumber1++
+	notenumber1 = 3
 	}
 	else{
 		if(notenumber2==1){
@@ -64,7 +64,7 @@ $("#save").click(function() {
 		$("#date2").empty();
 		var d = new Date();
 		$("#date2").append(d)
-		notenumber2++
+		notenumber2 = 3
 		}
 		else{
 			if(notenumber3==1) {
@@ -77,7 +77,7 @@ $("#save").click(function() {
 			$("#date3").empty();
 			var d = new Date();
 			$("#date3").append(d)
-			notenumber3++
+			notenumber3 = 3
 			}
 			else{
 				debugger;
@@ -91,7 +91,7 @@ $("#save").click(function() {
 				$("#date4").empty();
 				var d = new Date();
 				$("#date4").append(d)
-				notenumber4++
+				notenumber4 = 3
 				}
 				else{
 					if(notenumber5==1){
@@ -104,7 +104,7 @@ $("#save").click(function() {
 					$("#date5").empty();
 					var d = new Date();
 					$("#date5").append(d)
-					notenumber5++
+					notenumber5 = 3
 					}
 					else{
 						if(notenumber6==1){
@@ -117,7 +117,7 @@ $("#save").click(function() {
 						$("#date6").empty();
 						var d = new Date();
 						$("#date6").append(d)
-						notenumber6++
+						notenumber6 = 3
 						}
 						else{
 							if(notenumber7==1){
@@ -130,7 +130,7 @@ $("#save").click(function() {
 							$("#date7").empty();
 							var d = new Date();
 							$("#date7").append(d)
-							notenumber7++
+							notenumber7 = 3
 							}
 							else{
 								if(notenumber8==1){
@@ -143,7 +143,7 @@ $("#save").click(function() {
 								$("#date8").empty();
 								var d = new Date();
 								$("#date8").append(d)
-								notenumber8++
+								notenumber8 = 3
 								}
 								else{
 									if(notenumber9==1){
@@ -156,7 +156,7 @@ $("#save").click(function() {
 									$("#date9").empty();
 									var d = new Date();
 									$("#date9").append(d)
-									notenumber9++
+									notenumber9 = 3
 									}
 									else{
 										if(notenumber10==1){
@@ -169,7 +169,7 @@ $("#save").click(function() {
 										$("#date10").empty();
 										var d = new Date();
 										$("#date10").append(d)
-										notenumber10++
+										notenumber10 = 3
 										}
 										else{
 											alert("you have reached the maximum number of notes")
@@ -224,60 +224,58 @@ function view10() {
 function deletenote1() {
 	if(confirm("are you sure you want to delete the note?")){
 		$("#note1").css('display', 'none');
-		notenumber1 = 1;
-
-
+		notenumber1 = 2;
 	}
 //if cancel pressed do nothing
 }
 function deletenote2() {
 	if(confirm("are you sure you want to delete the note?")){
 		$("#note2").css('display', 'none');
-		notenumber2 = 1;
+		notenumber2 = 2;
 	}
 //if cancel pressed do noting
 }
 function deletenote3() {
 	if(confirm("are you sure you want to delete the note?")){
 		$("#note3").css('display', 'none');
-		notenumber3 = 1;
+		notenumber3 = 2;
 }
 //if cancel pressed do nothing
 }
 function deletenote4() {
 	if(confirm("are you sure you want to delete the note?")){
 		$("#note4").css('display', 'none');
-		notenumber4 = 1;
+		notenumber4 = 2;
 }
 //if cancel pressed do nothing
 }function deletenote5() {
 	if(confirm("are you sure you want to delete the note?")){
 		$("#note5").css('display', 'none');
-		notenumber5 = 1;
+		notenumber5 = 2;
 }
 //if cancel pressed do nothing
 }function deletenote6() {
 	if(confirm("are you sure you want to delete the note?")){
 		$("#note6").css('display', 'none');
-		notenumber6 = 1;
+		notenumber6 = 2;
 }
 //if cancel pressed do nothing
 }function deletenote7() {
 	if(confirm("are you sure you want to delete the note?")){
 		$("#note7").css('display', 'none');
-		notenumber7 = 1;
+		notenumber7 = 2;
 }
 //if cancel pressed do nothing
 }function deletenote8() {
 	if(confirm("are you sure you want to delete the note?")){
 		$("#note8").css('display', 'none');
-		notenumber8 = 1;
+		notenumber8 = 2;
 }
 //if cancel pressed do nothing
 }function deletenote9() {
 	if(confirm("are you sure you want to delete the note?")){
 		$("#note9").css('display', 'none');
-		notenumber9 = 1;
+		notenumber9 = 2;
 }
 //if cancel pressed do nothing
 }function deletenote10() {
@@ -347,6 +345,180 @@ function edit4() {
 function search() {
 	searchinput = $("#searchenter").val();
 	$("#cancel").css('display', 'block');
+	if (notenumber1 = 3) {
+		if (titleinput1 == searchinput){
+			$("#note2").css('display', 'none');
+			$("#note3").css('display', 'none');
+			$("#note4").css('display', 'none');
+			$("#note5").css('display', 'none');
+			$("#note6").css('display', 'none');
+			$("#note7").css('display', 'none');
+			$("#note8").css('display', 'none');
+			$("#note9").css('display', 'none');
+			$("#note10").css('display', 'none');
+		}
+		else if(notenumber2 = 3){
+			if (titleinput2 == searchinput){
+				$("#note1").css('display', 'none');
+				$("#note3").css('display', 'none');
+				$("#note4").css('display', 'none');
+				$("#note5").css('display', 'none');
+				$("#note6").css('display', 'none');
+				$("#note7").css('display', 'none');
+				$("#note8").css('display', 'none');
+				$("#note9").css('display', 'none');
+				$("#note10").css('display', 'none');	
+			}
+		
+			else if(notenumber3 = 3){
+				if (titleinput3 == searchinput){
+					$("#note1").css('display', 'none');
+					$("#note2").css('display', 'none');
+					$("#note4").css('display', 'none');
+					$("#note5").css('display', 'none');
+					$("#note6").css('display', 'none');
+					$("#note7").css('display', 'none');
+					$("#note8").css('display', 'none');
+					$("#note9").css('display', 'none');
+					$("#note10").css('display', 'none');	
+				}
+		
+				else if(notenumber4 = 3){
+					if (titleinput4 == searchinput){
+						$("#note1").css('display', 'none');
+						$("#note2").css('display', 'none');
+						$("#note3").css('display', 'none');
+						$("#note5").css('display', 'none');
+						$("#note6").css('display', 'none');
+						$("#note7").css('display', 'none');
+						$("#note8").css('display', 'none');
+						$("#note9").css('display', 'none');
+						$("#note10").css('display', 'none');	
+					}
+		
+					else if(notenumber5 = 3){
+						if (titleinput5 == searchinput){
+							$("#note1").css('display', 'none');
+							$("#note2").css('display', 'none');
+							$("#note3").css('display', 'none');
+							$("#note4").css('display', 'none');
+							$("#note6").css('display', 'none');
+							$("#note7").css('display', 'none');
+							$("#note8").css('display', 'none');
+							$("#note9").css('display', 'none');
+							$("#note10").css('display', 'none');	
+						}
+		
+						else if(notenumber6 = 3){
+							if (titleinput6 == searchinput){
+								$("#note1").css('display', 'none');
+								$("#note2").css('display', 'none');
+								$("#note3").css('display', 'none');
+								$("#note4").css('display', 'none');
+								$("#note5").css('display', 'none');
+								$("#note7").css('display', 'none');
+								$("#note8").css('display', 'none');
+								$("#note9").css('display', 'none');
+								$("#note10").css('display', 'none');	
+							}
+		
+							else if(notenumber7 = 3){
+								if (titleinput7 == searchinput){
+									$("#note1").css('display', 'none');
+									$("#note2").css('display', 'none');
+									$("#note3").css('display', 'none');
+									$("#note4").css('display', 'none');
+									$("#note5").css('display', 'none');
+									$("#note6").css('display', 'none');
+									$("#note8").css('display', 'none');
+									$("#note9").css('display', 'none');
+									$("#note10").css('display', 'none');	
+								}
+		
+								else if(notenumber8 = 3){
+									if (titleinput8 == searchinput){
+										$("#note1").css('display', 'none');
+										$("#note2").css('display', 'none');
+										$("#note3").css('display', 'none');
+										$("#note4").css('display', 'none');
+										$("#note5").css('display', 'none');
+										$("#note6").css('display', 'none');
+										$("#note7").css('display', 'none');
+										$("#note9").css('display', 'none');
+										$("#note10").css('display', 'none');	
+									}
+		
+									else if(notenumber9 = 3){
+										if (titleinput9 == searchinput){
+											$("#note1").css('display', 'none');
+											$("#note2").css('display', 'none');
+											$("#note3").css('display', 'none');
+											$("#note4").css('display', 'none');
+											$("#note5").css('display', 'none');
+											$("#note6").css('display', 'none');
+											$("#note7").css('display', 'none');
+											$("#note8").css('display', 'none');
+											$("#note10").css('display', 'none');	
+										}
+		
+										else if(notenumber10 = 3){
+											if (titleinput10 == searchinput){
+												$("#note1").css('display', 'none');
+												$("#note2").css('display', 'none');
+												$("#note3").css('display', 'none');
+												$("#note4").css('display', 'none');
+												$("#note5").css('display', 'none');
+												$("#note6").css('display', 'none');
+												$("#note7").css('display', 'none');
+												$("#note8").css('display', 'none');
+												$("#note9").css('display', 'none');	
+											}
+											else {
+												alert("There is no " + searchinput + " note")
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+function cancelsearch() {
+	
+	if(notenumber1 == 3){
+		$("#note1").css('display', 'block')
+	}
+	if(notenumber2 == 3){
+		$("#note2").css('display', 'block')
+	}
+	if(notenumber3 == 3){
+		$("#note3").css('display', 'block')
+	}
+	if(notenumber4 == 3){
+		$("#note4").css('display', 'block')
+	}
+	if(notenumber5 == 3){
+		$("#note5").css('display', 'block')
+	}
+	if(notenumber6 == 3){
+		$("#note6").css('display', 'block')
+	}
+	if(notenumber7 == 3){
+		$("#note7").css('display', 'block')
+	}
+	if(notenumber8 == 3){
+		$("#note8").css('display', 'block')
+	}
+	if(notenumber9 == 3){
+		$("#note9").css('display', 'block')
+	}
+	if(notenumber10 == 3){
+		$("#note10").css('display', 'block')
+	}
 }
 function sort() {
 
