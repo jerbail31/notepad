@@ -68,7 +68,7 @@ $("#save").click(function() {
 		}
 		else{
 			if(notenumber3==1) {
-			("#title3").empty()
+			$("#title3").empty();
 			noteinput3 = $("#noteenter").val();
 			titleinput3 = $("#titleenter").val();
 			$("#title3").append(titleinput3);
@@ -80,8 +80,9 @@ $("#save").click(function() {
 			notenumber3++
 			}
 			else{
+				debugger;
 				if(notenumber4==1){
-				$("#title4").empty()
+				$("#title4").empty();
 				noteinput4 = $("#noteenter").val();
 				titleinput4 = $("#titleenter").val();
 				$("#title4").append(titleinput4);
@@ -107,7 +108,7 @@ $("#save").click(function() {
 					}
 					else{
 						if(notenumber6==1){
-						$("#title6").empty()
+						$("#title6").empty();
 						noteinput6 = $("#noteenter").val();
 						titleinput6 = $("#titleenter").val();
 						$("#title6").append(titleinput6);
@@ -120,7 +121,7 @@ $("#save").click(function() {
 						}
 						else{
 							if(notenumber7==1){
-							$("#title7").empty()
+							$("#title7").empty();
 							noteinput7 = $("#noteenter").val();
 							titleinput7 = $("#titleenter").val();
 							$("#title7").append(titleinput7);
@@ -133,7 +134,7 @@ $("#save").click(function() {
 							}
 							else{
 								if(notenumber8==1){
-								$("#title8").empty()
+								$("#title8").empty();
 								noteinput8 = $("#noteenter").val();
 								titleinput8 = $("#titleenter").val();
 								$("#title8").append(titleinput8);
@@ -146,7 +147,7 @@ $("#save").click(function() {
 								}
 								else{
 									if(notenumber9==1){
-									$("#title9").empty()
+									$("#title9").empty();
 									noteinput9 = $("#noteenter").val();
 									titleinput9 = $("#titleenter").val();
 									$("#title9").append(titleinput9);
@@ -159,7 +160,7 @@ $("#save").click(function() {
 									}
 									else{
 										if(notenumber10==1){
-										$("#title10").empty()
+										$("#title10").empty();
 										noteinput10 = $("#noteenter").val();
 										titleinput10 = $("#titleenter").val();
 										$("#title10").append(titleinput10);
