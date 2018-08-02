@@ -29,7 +29,7 @@ var titleinput7 = "";
 var titleinput8 = "";
 var titleinput9 = "";
 var titleinput10 = "";
-
+var searchinput = "";
 //new note button
 $("#createnote").click(function() {
 	$("#titleenter").val("")
@@ -343,6 +343,10 @@ function edit4() {
 	$("#titleenter").val(titleinput10);
 	$("#noteenter").val(noteinput10);
 	$("#newnote").css('display', 'block');
+}
+function search() {
+	searchinput = $("#searchenter").val();
+	$("#cancel").css('display', 'block');
 }
 function sort() {
 

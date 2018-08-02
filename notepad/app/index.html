@@ -27,6 +27,18 @@
   		<h1>
   			<u>Notes</u>
   		</h1>
+        <!--search bar-->
+        <textarea 
+        cols="20" 
+        rows="1"
+        type="text" 
+        id="searchenter">
+        </textarea>
+        <button onclick="search()" style="padding: 5px 10px;">Search Title</button>
+        <button onclick="cancelsearch()" style="display:none">Cancel
+        </button>
+        <br/>
+        <br/>
         <!--where the entered note will be found-->
       	<div class="btn-group" id="note1" style="display:none">
       		<button id="title1" style="padding: 12px 100px;"></button>
