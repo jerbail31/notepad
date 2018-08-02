@@ -2,12 +2,33 @@ var sortdate = 0;
 var notenumber1 = 1;
 var notenumber2 = 1;
 var notenumber3 = 1;
+var notenumber4 = 1;
+var notenumber5 = 1;
+var notenumber6 = 1;
+var notenumber7 = 1;
+var notenumber8 = 1;
+var notenumber9 = 1;
+var notenumber = 1;
 var noteinput1 = "";
 var noteinput2 = "";
 var noteinput3 = "";
+var noteinput4 = "";
+var noteinput5 = "";
+var noteinput6 = "";
+var noteinput7 = "";
+var noteinput8 = "";
+var noteinput9 = "";
+var noteinput10 = "";
 var titleinput1 = "";
 var titleinput2 = "";
 var titleinput3 = "";
+var titleinput4 = "";
+var titleinput5 = "";
+var titleinput6 = "";
+var titleinput7 = "";
+var titleinput8 = "";
+var titleinput9 = "";
+var titleinput10 = "";
 
 //new note button
 $("#createnote").click(function() {
@@ -18,7 +39,7 @@ $("#createnote").click(function() {
 });
 //Save button
 $("#save").click(function() {
-	debugger;
+
 	if (notenumber1==1) {
 	$("#title1").empty()
 	noteinput1 = $("#noteenter").val();
@@ -58,8 +79,106 @@ $("#save").click(function() {
 			$("#date3").append(d)
 			notenumber3++
 			}
-			else {
-				alert("You have reached the maximum number of notes")
+			else{
+				if(notenumber4==1){
+				$("#title4").empty()
+				noteinput4 = $("#noteenter").val();
+				titleinput4 = $("#titleenter").val();
+				$("#title4").append(titleinput4);
+				$("#note4").css('display', 'block');
+				$("#newnote").css('display', 'none');
+				$("#date4").empty();
+				var d = new Date();
+				$("#date4").append(d)
+				notenumber4++
+				}
+				else{
+					if(notenumber5==1){
+					$("#title5").empty()
+					noteinput5 = $("#noteenter").val();
+					titleinput5 = $("#titleenter").val();
+					$("#title5").append(titleinput5);
+					$("#note5").css('display', 'block');
+					$("#newnote").css('display', 'none');
+					$("#date5").empty();
+					var d = new Date();
+					$("#date5").append(d)
+					notenumber5++
+					}
+					else{
+						if(notenumber6==1){
+						$("#title6").empty()
+						noteinput6 = $("#noteenter").val();
+						titleinput6 = $("#titleenter").val();
+						$("#title6").append(titleinput6);
+						$("#note6").css('display', 'block');
+						$("#newnote").css('display', 'none');
+						$("#date6").empty();
+						var d = new Date();
+						$("#date6").append(d)
+						notenumber6++
+						}
+						else{
+							if(notenumber7==1){
+							$("#title7").empty()
+							noteinput7 = $("#noteenter").val();
+							titleinput7 = $("#titleenter").val();
+							$("#title7").append(titleinput7);
+							$("#note7").css('display', 'block');
+							$("#newnote").css('display', 'none');
+							$("#date7").empty();
+							var d = new Date();
+							$("#date7").append(d)
+							notenumber7++
+							}
+							else{
+								if(notenumber8==1){
+								$("#title8").empty()
+								noteinput8 = $("#noteenter").val();
+								titleinput8 = $("#titleenter").val();
+								$("#title8").append(titleinput8);
+								$("#note8").css('display', 'block');
+								$("#newnote").css('display', 'none');
+								$("#date8").empty();
+								var d = new Date();
+								$("#date8").append(d)
+								notenumber8++
+								}
+								else{
+									if(notenumber9==1){
+									$("#title9").empty()
+									noteinput9 = $("#noteenter").val();
+									titleinput9 = $("#titleenter").val();
+									$("#title9").append(titleinput9);
+									$("#note9").css('display', 'block');
+									$("#newnote").css('display', 'none');
+									$("#date9").empty();
+									var d = new Date();
+									$("#date9").append(d)
+									notenumber9++
+									}
+									else{
+										if(notenumber10==1){
+										$("#title10").empty()
+										noteinput10 = $("#noteenter").val();
+										titleinput10 = $("#titleenter").val();
+										$("#title10").append(titleinput10);
+										$("#note10").css('display', 'block');
+										$("#newnote").css('display', 'none');
+										$("#date10").empty();
+										var d = new Date();
+										$("#date10").append(d)
+										notenumber10++
+										}
+										else{
+											alert("you have reached the maximum number of notes")
+										}
+									}	
+								}	
+							}	
+						}	
+					}	
+				}	
 			}	
 		}
 	}
