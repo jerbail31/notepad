@@ -80,7 +80,6 @@ $("#save").click(function() {
 			notenumber3 = 3
 			}
 			else{
-				debugger;
 				if(notenumber4==1){
 				$("#title4").empty();
 				noteinput4 = $("#noteenter").val();
@@ -345,6 +344,8 @@ function edit4() {
 function search() {
 	searchinput = $("#searchenter").val();
 	$("#cancel").css('display', 'block');
+	debugger;
+
 	if (notenumber1 = 3) {
 		if (titleinput1 == searchinput){
 			$("#note2").css('display', 'none');
