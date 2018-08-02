@@ -16,16 +16,21 @@ function createnewnote() {
 	button2.innerText = "View"
 	button2.id = "view";
 	button2.style.padding = "12px";
-	div.appendChild(button2)
+	
 	button3.innerText = "Edit"
 	button3.id = "edit";
 	button3.style.padding = "12px";
-	div.appendChild(button3);
+	
 	button4.innerText = "Delete";
 	button4.id = "view";
 	button4.style.padding = "12px";
-	div.appendChild(button4);
+	
 	date.id = "date";
+	
+	div.appendChild(button1);
+	div.appendChild(button2)
+	div.appendChild(button3);
+	div.appendChild(button4);
 	div.appendChild(date);
 	return div;
 
