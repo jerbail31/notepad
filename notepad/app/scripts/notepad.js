@@ -30,6 +30,7 @@ var titleinput8 = "";
 var titleinput9 = "";
 var titleinput10 = "";
 var searchinput = "";
+var notenumber = 0;
 //new note button
 $("#createnote").click(function() {
 	$("#titleenter").val("")
@@ -344,9 +345,8 @@ function edit4() {
 function search() {
 	searchinput = $("#searchenter").val();
 	$("#cancel").css('display', 'block');
-	debugger;
 
-	if (notenumber1 = 3) {
+	if (notenumber = 3) {
 		if (titleinput1 == searchinput){
 			$("#note2").css('display', 'none');
 			$("#note3").css('display', 'none');
@@ -358,7 +358,7 @@ function search() {
 			$("#note9").css('display', 'none');
 			$("#note10").css('display', 'none');
 		}
-		else if(notenumber2 = 3){
+		else if(notenumber = 3){
 			if (titleinput2 == searchinput){
 				$("#note1").css('display', 'none');
 				$("#note3").css('display', 'none');
@@ -371,7 +371,7 @@ function search() {
 				$("#note10").css('display', 'none');	
 			}
 		
-			else if(notenumber3 = 3){
+			else if(notenumber = 3){
 				if (titleinput3 == searchinput){
 					$("#note1").css('display', 'none');
 					$("#note2").css('display', 'none');
@@ -384,7 +384,7 @@ function search() {
 					$("#note10").css('display', 'none');	
 				}
 		
-				else if(notenumber4 = 3){
+				else if(notenumber = 3){
 					if (titleinput4 == searchinput){
 						$("#note1").css('display', 'none');
 						$("#note2").css('display', 'none');
@@ -397,7 +397,7 @@ function search() {
 						$("#note10").css('display', 'none');	
 					}
 		
-					else if(notenumber5 = 3){
+					else if(notenumber = 3){
 						if (titleinput5 == searchinput){
 							$("#note1").css('display', 'none');
 							$("#note2").css('display', 'none');
@@ -410,7 +410,7 @@ function search() {
 							$("#note10").css('display', 'none');	
 						}
 		
-						else if(notenumber6 = 3){
+						else if(notenumber = 3){
 							if (titleinput6 == searchinput){
 								$("#note1").css('display', 'none');
 								$("#note2").css('display', 'none');
@@ -423,7 +423,7 @@ function search() {
 								$("#note10").css('display', 'none');	
 							}
 		
-							else if(notenumber7 = 3){
+							else if(notenumber = 3){
 								if (titleinput7 == searchinput){
 									$("#note1").css('display', 'none');
 									$("#note2").css('display', 'none');
@@ -436,7 +436,7 @@ function search() {
 									$("#note10").css('display', 'none');	
 								}
 		
-								else if(notenumber8 = 3){
+								else if(notenumber = 3){
 									if (titleinput8 == searchinput){
 										$("#note1").css('display', 'none');
 										$("#note2").css('display', 'none');
@@ -449,7 +449,7 @@ function search() {
 										$("#note10").css('display', 'none');	
 									}
 		
-									else if(notenumber9 = 3){
+									else if(notenumber = 3){
 										if (titleinput9 == searchinput){
 											$("#note1").css('display', 'none');
 											$("#note2").css('display', 'none');
@@ -462,7 +462,7 @@ function search() {
 											$("#note10").css('display', 'none');	
 										}
 		
-										else if(notenumber10 = 3){
+										else if(notenumber = 3){
 											if (titleinput10 == searchinput){
 												$("#note1").css('display', 'none');
 												$("#note2").css('display', 'none');
@@ -489,7 +489,11 @@ function search() {
 	}
 }
 function cancelsearch() {
-	
+	$("#cancel").css('display', 'none');
+	$("#searchenter").val("");
+	if (searchinput == ""){
+		return;
+	}
 	if(notenumber1 == 3){
 		$("#note1").css('display', 'block')
 	}
@@ -520,7 +524,5 @@ function cancelsearch() {
 	if(notenumber10 == 3){
 		$("#note10").css('display', 'block')
 	}
-}
-function sort() {
-
+	
 }
