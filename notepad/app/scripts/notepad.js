@@ -8,7 +8,7 @@ var notenumber6 = 1;
 var notenumber7 = 1;
 var notenumber8 = 1;
 var notenumber9 = 1;
-var notenumber = 1;
+var notenumber10 = 1;
 var noteinput1 = "";
 var noteinput2 = "";
 var noteinput3 = "";
@@ -197,6 +197,27 @@ function view2() {
 function view3() {
 	alert(noteinput3);
 }
+function view4() {
+	alert(noteinput4);
+}
+function view5() {
+	alert(noteinput5);
+}
+function view6() {
+	alert(noteinput6);
+}
+function view7() {
+	alert(noteinput7);
+}
+function view8() {
+	alert(noteinput8);
+}
+function view9() {
+	alert(noteinput9);
+}
+function view10() {
+	alert(noteinput10);
+}
 
 //Delete button
 //Delete the notes button will create a pop-up(ok and cancel)
@@ -223,7 +244,49 @@ function deletenote3() {
 }
 //if cancel pressed do nothing
 }
-
+function deletenote4() {
+	if(confirm("are you sure you want to delete the note?")){
+		$("#note4").css('display', 'none');
+		notenumber4 = 1;
+}
+//if cancel pressed do nothing
+}function deletenote5() {
+	if(confirm("are you sure you want to delete the note?")){
+		$("#note5").css('display', 'none');
+		notenumber5 = 1;
+}
+//if cancel pressed do nothing
+}function deletenote6() {
+	if(confirm("are you sure you want to delete the note?")){
+		$("#note6").css('display', 'none');
+		notenumber6 = 1;
+}
+//if cancel pressed do nothing
+}function deletenote7() {
+	if(confirm("are you sure you want to delete the note?")){
+		$("#note7").css('display', 'none');
+		notenumber7 = 1;
+}
+//if cancel pressed do nothing
+}function deletenote8() {
+	if(confirm("are you sure you want to delete the note?")){
+		$("#note8").css('display', 'none');
+		notenumber8 = 1;
+}
+//if cancel pressed do nothing
+}function deletenote9() {
+	if(confirm("are you sure you want to delete the note?")){
+		$("#note9").css('display', 'none');
+		notenumber9 = 1;
+}
+//if cancel pressed do nothing
+}function deletenote10() {
+	if(confirm("are you sure you want to delete the note?")){
+		$("#note10").css('display', 'none');
+		notenumber10 = 1;
+}
+//if cancel pressed do nothing
+}
 //edit button
 function edit1() {
 	
@@ -243,6 +306,42 @@ function edit3() {
 	notenumber3 = 1;
 	$("#titleenter").val(titleinput3);
 	$("#noteenter").val(noteinput3);
+	$("#newnote").css('display', 'block');
+}
+function edit4() {
+	notenumber4 = 1;
+	$("#titleenter").val(titleinput4);
+	$("#noteenter").val(noteinput4);
+	$("#newnote").css('display', 'block');
+}function edit5() {
+	notenumber5 = 1;
+	$("#titleenter").val(titleinput5);
+	$("#noteenter").val(noteinput5);
+	$("#newnote").css('display', 'block');
+}function edit6() {
+	notenumber6 = 1;
+	$("#titleenter").val(titleinput6);
+	$("#noteenter").val(noteinput6);
+	$("#newnote").css('display', 'block');
+}function edit7() {
+	notenumber7 = 1;
+	$("#titleenter").val(titleinput7);
+	$("#noteenter").val(noteinput7);
+	$("#newnote").css('display', 'block');
+}function edit8() {
+	notenumber8 = 1;
+	$("#titleenter").val(titleinput8);
+	$("#noteenter").val(noteinput8);
+	$("#newnote").css('display', 'block');
+}function edit9() {
+	notenumber9 = 1;
+	$("#titleenter").val(titleinput9);
+	$("#noteenter").val(noteinput9);
+	$("#newnote").css('display', 'block');
+}function edit10() {
+	notenumber10 = 1;
+	$("#titleenter").val(titleinput10);
+	$("#noteenter").val(noteinput10);
 	$("#newnote").css('display', 'block');
 }
 function sort() {
