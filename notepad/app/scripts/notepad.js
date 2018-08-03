@@ -1,4 +1,4 @@
-var sortdate = 0;
+//variable that knows if the notes is showing or not
 var notenumber1 = 1;
 var notenumber2 = 1;
 var notenumber3 = 1;
@@ -9,6 +9,7 @@ var notenumber7 = 1;
 var notenumber8 = 1;
 var notenumber9 = 1;
 var notenumber10 = 1;
+//variable that holds the note info
 var noteinput1 = "";
 var noteinput2 = "";
 var noteinput3 = "";
@@ -19,6 +20,7 @@ var noteinput7 = "";
 var noteinput8 = "";
 var noteinput9 = "";
 var noteinput10 = "";
+//variable that will hold the title of each notes
 var titleinput1 = "";
 var titleinput2 = "";
 var titleinput3 = "";
@@ -30,6 +32,7 @@ var titleinput8 = "";
 var titleinput9 = "";
 var titleinput10 = "";
 var searchinput = "";
+//useless variable(DO NOT REMOVE)
 var notenumber = 0;
 //new note button
 $("#createnote").click(function() {
@@ -40,7 +43,9 @@ $("#createnote").click(function() {
 });
 //Save button
 $("#save").click(function() {
-
+	//empty and remove the text area 
+	//Shows new date under
+	//checks if a note is free to be used
 	if (notenumber1==1) {
 	$("#title1").empty()
 	noteinput1 = $("#noteenter").val();
@@ -49,7 +54,6 @@ $("#save").click(function() {
 	$("#note1").css('display', 'block');
 	$("#newnote").css('display', 'none');
 	$("#date1").empty();
-	
 	var d = new Date();
 	$("#date1").append(d)
 	notenumber1 = 3
@@ -187,6 +191,7 @@ $("#save").click(function() {
 });
 
 //view button
+//will show the alert content depending on which note was clicked
 function view1() {
 	alert(noteinput1);
 }
@@ -286,6 +291,8 @@ function deletenote4() {
 //if cancel pressed do nothing
 }
 //edit button
+//puts the note in text area
+//shows the thing you enter your note in
 function edit1() {
 	
 	notenumber1 = 1;
@@ -342,10 +349,12 @@ function edit4() {
 	$("#noteenter").val(noteinput10);
 	$("#newnote").css('display', 'block');
 }
+//search button clicked function
 function search() {
 	searchinput = $("#searchenter").val();
+	//adds the Reset Search button
 	$("#cancel").css('display', 'block');
-
+	// if search matches if will only display the good note
 	if (notenumber = 3) {
 		if (titleinput1 == searchinput){
 			$("#note2").css('display', 'none');
@@ -474,6 +483,7 @@ function search() {
 												$("#note8").css('display', 'none');
 												$("#note9").css('display', 'none');	
 											}
+											//if no title called like you entered in the search it will show an alert
 											else {
 												alert("There is no " + searchinput + " note")
 											}
@@ -488,6 +498,9 @@ function search() {
 		}
 	}
 }
+//this function will remove the Reset search button
+//it will also empty the text area
+//it will display the notes if they appeared before the search
 function cancelsearch() {
 	$("#cancel").css('display', 'none');
 	$("#searchenter").val("");

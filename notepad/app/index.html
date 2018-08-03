@@ -43,6 +43,8 @@
         <br/>
         <br/>
         <!--where the entered note will be found-->
+        <!--in this order because last created up top of the list-->
+        <!--note10-->
       	<div class="btn-group" id="note10" style="display:none">
       		<button id="title10" style="padding: 12px 100px;"></button>
       		<button onclick="view10()" style="padding:12px;">View</button>
@@ -127,7 +129,8 @@
         </div>
         <!--where the place you can enter your note will be-->
       	<div id="newnote" style="display:none">
-			<br/>
+			<!--title-->
+            <br/>
 			Title:
 			<br/>
             <textarea 
@@ -138,7 +141,8 @@
             </textarea>
 			<br/>
 			<br/>
-			Note:
+			<!--note-->
+            Note:
 			<br/>
 			<textarea 
 			cols="40" 
@@ -150,6 +154,7 @@
             <br/>
 			<button id="save">Save</button>
         </div>
+        <!-- links to javascript files-->
         <script type="text/javascript" src="scripts/jquery.min.js"></script>
         <script type="text/javascript" src="scripts/notepad.js"></script>
     </body>
