@@ -1,6 +1,6 @@
 # Notepad (2018)
 
-this is where the final project will be<br/>
+This was my first project. I had to make this as a final project for my ICS3U class.<br/>
 preview of site https://drive.google.com/file/d/1VKXoXOWbOeBgmB0y-Y9eQV-CzklIBqvC/view?usp=sharing\
 
 # What the project does
