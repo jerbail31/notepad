@@ -1,6 +1,6 @@
 # Notepad (2018)
 
-([Click to view project](https://jerbail31.github.io/notepad/notepad/app/index.html)).
+([Click to view project](https://jerbail31.github.io/notepad/notepad/app/index.html))<br/>
 This was my first project. I had to make this as a final project for my ICS3U class.<br/>
 preview of site https://drive.google.com/file/d/1VKXoXOWbOeBgmB0y-Y9eQV-CzklIBqvC/view?usp=sharing\
 
